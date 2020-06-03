@@ -4,26 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!--top line-->
+    <!--навигация-->
     <header>
       <nav>
-        <a href="">Web Studio</a>
-        <ul>
-          <li><a href="">Студия</a></li>
-          <li><a href="">Портфолио</a></li>
-          <li><a href="">Контакты</a></li>
+        <a class="logo" href="./index.html">
+          <span class="logo-web">Web</span>
+          <span class="logo-studio">Studio</span>
+        </a>
+        <ul class="site-nav list">
+          <li><a href="./index.html" class="link">Студия</a></li>
+          <li><a href="./portfolio.html" class="link">Портфолио</a></li>
+          <li><a href="" class="link">Контакты</a></li>
         </ul>
 
-        <ul>
-          <li><a href="info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <ul class="auth-nav list">
+          <li>
+            <a href="info@devstudio.com" class="link">info@devstudio.com</a>
+          </li>
+          <li>
+            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+          </li>
         </ul>
       </nav>
     </header>
     <main>
-      <!--hero-->
+      <!--герой-->
       <div>
         <section>
           <h1>эффективные решения для вашего бизнеса</h1>
@@ -76,30 +84,31 @@
         <ul>
           <li>
             <a href="">
-              <img src="./img/loptop.png" alt="ноктбук" width="370" />
+              <img src="./img/img.jpg" alt="ноктбук" width="370" />
               <h3>Десктопные приложения</h3></a
             >
           </li>
           <li>
             <a href="">
-              <img src="./img/box.png" alt="смартфон" width="370" />
+              <img src="./img/phone.jpg" alt="смартфон" width="370" />
               <h3>Мобильные приложения</h3></a
             >
           </li>
           <li>
             <a href="">
-              <img src="./img/mon.png" alt="монитор" width="370" />
+              <img src="./img/монитор.jpg" alt="монитор" width="370" />
               <h3>Дизайнерские решения</h3></a
             >
           </li>
         </ul>
       </section>
+      <!-- сотрудники -->
       <section>
         <h2>Наша команда</h2>
         <ul>
           <li>
             <img
-              src="./img/designer.png"
+              src="./img/Ёхан.jpg"
               alt="Product Designer John Smith"
               width="270"
             />
@@ -115,7 +124,7 @@
 
           <li>
             <img
-              src="./img/developer.png"
+              src="./img/марта.jpg"
               alt="Frontend Developer Marta Stewart"
               width="270"
             />
@@ -131,7 +140,7 @@
 
           <li>
             <img
-              src="./img/marketing.png"
+              src="./img/роберт.jpg"
               alt="Marketing Robert Jakis"
               width="270"
             />
@@ -146,7 +155,11 @@
           </li>
 
           <li>
-            <img src="./img/dou.png" alt="UI Designer Martin Doe" width="270" />
+            <img
+              src="./img/мартин.jpg"
+              alt="UI Designer Martin Doe"
+              width="270"
+            />
             <h3>Martin Doe</h3>
             <p>UI Designer</p>
             <ul>
@@ -158,6 +171,7 @@
           </li>
         </ul>
       </section>
+      <!-- с кем мы работаем -->
       <section>
         <h2>Постоянные клиенты</h2>
         <ul>
@@ -182,6 +196,7 @@
         </ul>
       </section>
     </main>
+    <!-- наши крнтакты -->
     <footer>
       <ul>
         <li>
@@ -203,7 +218,7 @@
         </li>
         <li>
           <b>Подпишитесь на рассылку</b>
-          <form action="">
+          <form action="#">
             <input
               type="text"
               placeholder="E-mail"

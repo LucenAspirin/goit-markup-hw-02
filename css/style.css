@@ -1,0 +1,43 @@
+body {
+  background-color: #ffffff;
+  color: #757575;
+}
+/* обнуление спска точки */
+.list {
+  list-style: none;
+}
+/* логотип компании */
+.logo :hover {
+  color: #0ed12f;
+}
+.logo-web {
+  color: #2196f3;
+}
+.logo-studio {
+  color: #000000;
+}
+/* навигация */
+.site-nav .link {
+  color: #2196f3;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #000;
+}
+.auth-nav .link {
+  color: #2196f3;
+}
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: #000;
+}
+
+/* #212121 основной цвет текста */
+/* #757575 цвет абзатцов */
+/* второая часть цвет лого #000000 */
+/* #2196F3 первоя часть лого */
+/* font-family: Roboto; */
+/* акцент #2196F3 */
+/* цвет фона первичный #FFFFFF;*/
+/* вторичны цвет фона #F5F4FA */
+/* цвет футера #2F303A; */
