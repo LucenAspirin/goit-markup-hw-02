@@ -1,14 +1,24 @@
+:root {
+  --main-text-color: #757575;
+  --titel-text-color: #212121;
+  --accent-color: rgb(245, 221, 2);
+}
 body {
   background-color: #ffffff;
-  color: #757575;
+  color: var(--main-text-color);
 }
 /* обнуление спска точки */
 .list {
   list-style: none;
 }
+/* цвет текста заголовка */
+.section-title {
+  color: var(--titel-text-color);
+}
+
 /* логотип компании */
-.logo :hover {
-  color: #0ed12f;
+.logo:hover {
+  color: var(--accent-color);
 }
 .logo-web {
   color: #2196f3;
@@ -22,17 +32,52 @@ body {
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: #000;
+  color: var(--accent-color);
 }
 .auth-nav .link {
   color: #2196f3;
 }
 .auth-nav .link:hover,
 .auth-nav .link:focus {
-  color: #000;
+  color: var(--accent-color);
 }
-
-/* #212121 основной цвет текста */
+/* герой */
+.hero-title {
+  color: #f0e8e8;
+}
+/* фючерс */
+.feature-title {
+  color: var(--titel-text-color);
+}
+.slogon
+/* род деятельности */
+.direction
+/* сотрудники */
+.tram
+.social-networks .networks:hover,
+.social-networks .networks:focus {
+  color: var(--accent-color);
+  list-style: none;
+}
+/* клиенты */
+.customers .company {
+  color: #2196f3;
+}
+.customers .company:hover,
+.customers .company:focus {
+  color: var(--accent-color);
+  list-style: none;
+}
+/* подвал */
+.footer-logo {
+  list-style: none;
+}
+.address .address-link:hover,
+.address .address-link:focus {
+  color: var(--accent-color);
+  list-style: none;
+}
+/* #212121 цвет заголовкав */
 /* #757575 цвет абзатцов */
 /* второая часть цвет лого #000000 */
 /* #2196F3 первоя часть лого */
