@@ -1,7 +1,7 @@
 :root {
   --main-text-color: #757575;
   --titel-text-color: #212121;
-  --accent-color: rgb(245, 221, 2);
+  --accent-color: #2196f3;
   --primary-button-bg-color: #2196f3;
   --logo-web-text-color: #2196f3;
   --logo-studio-text-color: #000000;
@@ -11,6 +11,9 @@ body {
   background-color: #ffffff;
   color: var(--main-text-color);
   font-family: roboto, sans-serif;
+}
+a {
+  text-decoration: none;
 }
 /* обнуление спска точки */
 .list {
@@ -25,10 +28,10 @@ body {
 .logo {
   font-family: Raleway, sans-serif;
 
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 0.8;
-  /* identical to box height */
+
   letter-spacing: 0.03em;
 }
 .logo:hover {
@@ -39,6 +42,9 @@ body {
 }
 .logo-studio {
   color: var(--logo-studio-text-color);
+}
+.foot-logo-studio {
+  color: #ffffff;
 }
 /* навигация */
 .site-nav {
@@ -72,7 +78,7 @@ body {
 }
 /* герой */
 .hero-title {
-  color: #f0e8e8;
+  color: #ffffff;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -105,6 +111,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: #ffffff;
 }
 .feature .text {
   font-weight: normal;
@@ -166,7 +173,6 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: rgba(255, 255, 255, 0.6);
 }
 .address {
@@ -212,6 +218,8 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+}
+.work-linke {
   color: var(--main-text-color);
 }
 .work-linke:hover,
