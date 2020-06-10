@@ -5,7 +5,7 @@
   --primary-button-bg-color: #2196f3;
   --logo-web-text-color: #2196f3;
   --logo-studio-text-color: #000000;
-  --nav-link: #2196f3;
+  --nav-link: #212121;
 }
 body {
   background-color: #ffffff;
@@ -17,21 +17,30 @@ a {
 }
 /* обнуление спска точки */
 .list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
-/* цвет текста заголовка */
-.section-title {
-  color: var(--titel-text-color);
-}
 
+/* навигация */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+  outline: 2px solid blueviolet;
+}
 /* логотип компании */
 .logo {
   font-family: Raleway, sans-serif;
-
   font-weight: 700;
   font-size: 26px;
   line-height: 0.8;
-
   letter-spacing: 0.03em;
 }
 .logo:hover {
@@ -48,8 +57,17 @@ a {
 }
 /* навигация */
 .site-nav {
+  display: flex;
+  margin-left: 85px;
+}
+.site-nav .item + .item {
+  margin-left: 50px;
 }
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--nav-link);
   font-weight: 500;
   font-size: 14px;
@@ -61,30 +79,52 @@ a {
 .site-nav .link:focus {
   color: var(--accent-color);
 }
-.auth-nav .link {
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+.auth-nav .item + .item {
+  margin-left: 30px;
+}
+.auth-nav .link-namber {
+  display: block;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--nav-link);
   font-weight: 500;
   font-size: 14px;
   line-height: 0.87;
   letter-spacing: 0.02em;
 }
-.auth-nav .link:hover,
-.auth-nav .link:focus {
+.auth-nav .link-namber:hover,
+.auth-nav .link-namber:focus {
   color: var(--accent-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.link-namber {
+  color: var(--main-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
 /* герой */
+.hero {
+  text-align: center;
+}
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  background-color: aqua;
+  outline: 3px solid tomato;
   color: #ffffff;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  /* or 136% */
-
-  text-align: center;
 }
 /* заголовки */
 .section-title {
@@ -97,6 +137,9 @@ a {
 
 /* фючерс */
 .slogan-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -105,6 +148,9 @@ a {
   color: var(--titel-text-color);
 }
 .feature-title {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -114,17 +160,24 @@ a {
   color: #ffffff;
 }
 .feature .text {
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.14;
 }
 .names-title {
+  margin-top: 0;
+  margin-bottom: 10;
   color: var(--titel-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+}
+.down {
+  margin-bottom: 94px;
 }
 .slogon
 /* род деятельности */
@@ -133,15 +186,20 @@ a {
 .direction 
 
 /* сотрудники */
+.img-team {
+  margin-bottom: 30px;
+}
 .section-employees {
   background-color: #bbb3e2;
 }
-.tram .social-networks .networks:hover,
+.team .social-networks .networks:hover,
 .social-networks .networks:focus {
   color: var(--accent-color);
   list-style: none;
 }
 .prof-text {
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.18;
@@ -149,6 +207,12 @@ a {
   letter-spacing: 0.03em;
 }
 /* клиенты */
+/* цвет текста заголовка */
+.section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: var(--titel-text-color);
+}
 .customers .company {
   color: #2196f3;
 }
@@ -232,12 +296,14 @@ a {
 }
 .button.primary:hover,
 .button.primary:focus {
+  color: var(--titel-text-color);
+}
+.button.primary {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--titel-text-color);
 }
 
 .button.secondary {
@@ -249,6 +315,12 @@ a {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  widows: 200px;
+  text-align: center;
 }
 /* #212121 цвет заголовкав */
 /* #757575 цвет абзатцов */
