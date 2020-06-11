@@ -33,7 +33,7 @@ a {
   width: 1170px;
   padding-right: 15px;
   padding-left: 15px;
-  outline: 2px solid blueviolet;
+  /* outline: 2px solid blueviolet; */
 }
 /* логотип компании */
 .logo {
@@ -82,13 +82,17 @@ a {
 .auth-nav {
   display: flex;
   margin-left: auto;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .auth-nav .item + .item {
   margin-left: 30px;
 }
 .auth-nav .link-namber {
   display: block;
-
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -101,10 +105,6 @@ a {
 .auth-nav .link-namber:hover,
 .auth-nav .link-namber:focus {
   color: var(--accent-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
 }
 .link-namber {
   color: var(--main-text-color);
@@ -119,8 +119,8 @@ a {
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
-  background-color: aqua;
-  outline: 3px solid tomato;
+  /* background-color: aqua;
+  outline: 3px solid tomato; */
   color: #ffffff;
   font-weight: 900;
   font-size: 44px;
@@ -190,7 +190,7 @@ a {
   margin-bottom: 30px;
 }
 .section-employees {
-  background-color: #bbb3e2;
+  background-color: #afb1b8;
 }
 .team .social-networks .networks:hover,
 .social-networks .networks:focus {
@@ -240,11 +240,17 @@ a {
   color: rgba(255, 255, 255, 0.6);
 }
 .address {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
+  /* or 171% */
+
   letter-spacing: 0.03em;
   color: #ffffff;
 }
+
 .push {
   font-weight: 700;
   font-size: 14px;
@@ -288,7 +294,6 @@ a {
 }
 .work-linke:hover,
 .work-linke:focus {
-  color: var(--accent-color);
 }
 
 /* button */
